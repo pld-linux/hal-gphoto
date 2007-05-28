@@ -28,9 +28,9 @@ obsługi kamer cyfrowych w przestrzeni użytkownika.
 %prep
 
 %install
-install -d $RPM_BUILD_ROOT{%{_datadir}/hal/fdi/information,%{_sysconfdir}/udev/rules.d}
+install -d $RPM_BUILD_ROOT{%{_datadir}/hal/fdi/information/10freedesktop,%{_sysconfdir}/udev/rules.d}
 
-install %{SOURCE0} $RPM_BUILD_ROOT%{_datadir}/%{name}/fdi/information/10freedesktop/10-gphoto.fdi
+install %{SOURCE0} $RPM_BUILD_ROOT%{_datadir}/hal/fdi/information/10freedesktop/10-gphoto.fdi
 install %{SOURCE1} $RPM_BUILD_ROOT%{_sysconfdir}/udev/rules.d/52-udev-gphoto.rules
 
 %clean
@@ -48,4 +48,4 @@ EOF
 %files
 %defattr(644,root,root,755)
 %{_sysconfdir}/udev/rules.d/52-udev-gphoto.rules
-%{_datadir}/%{name}/fdi/information/10freedesktop/10-gphoto.fdi
+%{_datadir}/hal/fdi/information/10freedesktop/10-gphoto.fdi
