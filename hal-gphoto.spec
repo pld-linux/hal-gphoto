@@ -7,8 +7,8 @@ Release:	2
 # ?
 License:	GPL v2
 Group:		Applications/System
-Source0:	%{name}-libgphoto2.fdi
-Source1:	%{name}-libgphoto_udev.rules
+Source0:	hal-libgphoto2.fdi
+Source1:	hal-libgphoto_udev.rules
 Requires:	hal >= 0.5.9-2
 Requires:	libusb >= 0.1.10a
 Requires:	udev >= 1:089
