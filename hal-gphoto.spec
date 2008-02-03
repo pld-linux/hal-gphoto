@@ -3,7 +3,7 @@ Summary(pl.UTF-8):	Wsparcie dla kamer cyfrowych w przestrzeni użytkownika
 Name:		hal-gphoto
 # XXX: update versioning to follow gphoto2 version which data supports?
 Version:	0.5.9
-Release:	2
+Release:	3
 # ?
 License:	GPL v2
 Group:		Applications/System
@@ -11,7 +11,7 @@ Source0:	hal-libgphoto2.fdi
 Source1:	hal-libgphoto_udev.rules
 Requires:	hal >= 0.5.9-2
 Requires:	libusb >= 0.1.10a
-Requires:	udev >= 1:089
+Requires:	udev-core >= 1:089
 Provides:	udev-digicam
 Obsoletes:	hotplug-digicam
 Obsoletes:	udev-digicam
